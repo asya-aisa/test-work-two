@@ -6,7 +6,7 @@ import PageTwo from './PageTwo';
 function App() {
   return (
     <div className="App">
-      <PageOne />
+      <PageTwo />
     </div>
   );
 }

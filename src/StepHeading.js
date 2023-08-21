@@ -1,6 +1,8 @@
-export default function StepHeading(props) {
+const StepHeading = (props) => {
     return <div>
         <p className={props.classNameText}>{props.text}</p>
         <hr className={props.classNameHr}></hr>
-        </div>
+    </div>
 }
+
+export default StepHeading;
