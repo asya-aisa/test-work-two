@@ -1,3 +1,30 @@
+.headings-text {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  font-size: 18px;
+  line-height: 25px;
+  color: #484848;
+}
+.step-heading-text {
+  width: 290px;
+  height: 25px;
+  top: 152px;
+  left: 330px;
+}
+.hrs-step {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  border: none;
+  border-bottom: #4285F4 5px solid;
+}
+.step-heading-hr {
+  width: 275px;
+  height: 3px;
+  top: 175px;
+  left: 332px;
+}
 .label-inputs {
   padding: 0px;
   margin: 0px;
@@ -7,6 +34,74 @@
   line-height: 18px;
   color: #484848;
 }
+.label-fio {
+  width: 206px;
+  top: 208px;
+  left: 329px;
+}
+.fio-input {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  width: 380px;
+  height: 58px;
+  top: 231px;
+  left: 329px;
+}
+.errors {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  height: 13px;
+  line-height: 13px;
+  font-size: 13px;
+  color: #F44336;
+  text-align: right;
+}
+.error-fio {
+  width: 166px;
+  top: 294px;
+  left: 543px;
+}
+.label-birthday {
+  width: 132px;
+  top: 208px;
+  left: 729px;
+}
+.inputs {
+  margin: 0px;
+  position: absolute;
+  padding-left: 20px;
+  width: 360px;
+  height: 58px;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 5px;
+}
+.inputs::placeholder {
+  position: absolute;
+  font-size: 18px;
+  line-height: 25px;
+  color: #979797;
+  top: 20px;
+  left: 20px;
+  opacity: 50%;
+}
+.inputs:focus {
+  outline-color: rgba(66, 133, 244, 50.09%);
+}
+.input-error {
+  border: 1px solid rgba(255, 115, 115, 50.09%);
+  color: #484848;
+}
+.input-success {
+  border: 1px solid #3477E4;
+  color: #484848;
+}
+.input-state {
+  border: 1px solid #979797;
+  color: #979797;
+}
 .input-birthday {
   top: 231px;
   left: 729px;
@@ -14,48 +109,24 @@
 .input-birthday::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
-.inputs:focus {
-  outline-color: rgba(66, 133, 244, 50.09%);
-}
-.label-birthday {
-  width: 132px;
-  top: 208px;
-  left: 729px;
-}
 .error-birthday {
   width: 324px;
   top: 294px;
   left: 786px;
 }
-
-.error-file-one {
-  top: 807px;
+.label-email {
+  top: 319px;
   left: 330px;
-  width: 139px;
-}
-.error-file-two {
-  top: 807px;
-  left: 480px;
-  width: 139px;
-}
-.error-file-three {
-  top: 807px;
-  left: 630px;
-  width: 139px;
-}
-.error-whenPassport {
-  width: 178px;
-  top: 672px;
-  left: 532px;
+  width: 52px;
 }
 .input-email {
   top: 342px;
   left: 330px;
 }
-.label-email {
-  top: 319px;
-  left: 330px;
-  width: 52px;
+.error-email {
+  width: 166px;
+  top: 405px;
+  left: 544px;
 }
 .label-inputs-two {
   padding: 0px;
@@ -73,207 +144,6 @@
   left: 410px;
 }
 
-.btn-next {
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  width:220px;
-  height: 55px;
-  background: #5491F5;
-  border: none;
-  color: #fff;
-  border-radius: 5px;
-}
-
-.btn-one-page {
-  top: 852px;
-  left: 890px;
-}
-.text-btn {
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  width: 140px;
-  height: 20px;
-  top: 18px;
-  left: 40px;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-}
-.btn-next:disabled {
-  background: rgba(84, 145, 245, 50%);;
-}
-.btn-next:not([disabled]):hover {
-  background: #3477E4;
-}
-
-.step-heading-text {
-  width: 290px;
-  height: 25px;
-  top: 152px;
-  left: 330px;
-}
-
-.hrs-step {
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  border: none;
-  border-bottom: #4285F4 5px solid;
-}
-.step-heading-hr {
-  width: 275px;
-  height: 3px;
-  top: 175px;
-  left: 332px;
-}
-.headings {
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  height: 25px;
-  font-size: 25px;
-  line-height: 25px;
-  color: #484848;
-}
-.heading-passport-data {
-  width: 251px;
-  top: 440px;
-  left: 329px;
-}
-.errors {
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  height: 13px;
-  line-height: 13px;
-  font-size: 13px;
-  color: #F44336;
-  text-align: right;
-}
-.error-file-doc {
-  width: 140px;
-  top: 523px;
-  left: 570px;
-}
-.error-email {
-  width: 166px;
-  top: 405px;
-  left: 544px;
-}
-.input-whoPassport {
-  top: 498px;
-  left: 730px;
-}
-
-.inputs::placeholder {
-  position: absolute;
-  font-size: 18px;
-  line-height: 25px;
-  color: #979797;
-  top: 20px;
-  left: 20px;
-  opacity: 50%;
-}
-.label-whoPassport {
-  width: 92px;
-  top: 475px;
-  left: 730px;
-}
-
-.error-whoPassport {
-  width: 166px;
-  top: 561px;
-  left: 944px;
-}
-.label-whenPassport {
-  width: 107px;
-  top: 586px;
-  left: 330px;
-}
-.input-whenPassport {
-  top: 609px;
-  left: 330px;
-}
-.input-whenPassport::-webkit-calendar-picker-indicator {
-  opacity: 0;
-}
-
-.heading-photo-data {
-  width: 216px;
-  top: 707px;
-  left: 330px;
-}
-
-.btn-add-files {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  width: 140px;
-  height: 60px;
-  border: 1px solid #5491F5;
-  background: #fff;
-  color: #5491F5;
-  border-radius: 5px;
-}
-
-.btn-add-file-passport-2-3-page {
-  top: 742px;
-  left: 330px;
-
-}
-.btn-add-file-text-plus {
-  font-size: 30px;
-  line-height: 30px;
-}
-.btn-add-file-text {
-  font-size: 13px;
-  line-height: 16px;
-}
-.btn-add-file-passport-address {
-  top: 742px;
-  left: 480px;
-}
-.btn-add-file-passport-selfy {
-  top: 742px;
-  left: 630px;
-}
-.label-photo-doc {
-  width: 201px;
-  height: 18px;
-  top: 716px;
-  left: 566px;
-}
-.text-save-data {
-  width: 220px;
-  height: 48px;
-  top: 750px;
-  left: 790px;
-}
-.fio-input {
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  width: 380px;
-  height: 58px;
-  top: 231px;
-  left: 329px;
-}
-.label-fio {
-  width: 206px;
-  top: 208px;
-  left: 329px;
-}
-.error-fio {
-  width: 166px;
-  top: 294px;
-  left: 543px;
-}
 .passport-number-input {
   top: 498px;
   left: 330px;
@@ -294,73 +164,168 @@
   top: 561px;
   left: 532px;
 }
-.passport-cod-input {
-  top: 609px;
+.label-whoPassport {
+  width: 92px;
+  top: 475px;
   left: 730px;
 }
-
+.input-whoPassport {
+  top: 498px;
+  left: 730px;
+}
+.error-whoPassport {
+  width: 166px;
+  top: 561px;
+  left: 944px;
+}
+.label-whenPassport {
+  width: 107px;
+  top: 586px;
+  left: 330px;
+}
+.input-whenPassport {
+  top: 609px;
+  left: 330px;
+}
+.input-whenPassport::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.error-whenPassport {
+  width: 178px;
+  top: 672px;
+  left: 532px;
+}
 .label-passport-cod {
   top: 586px;
   left: 730px;
   width: 170px;
+}
+.passport-cod-input {
+  top: 609px;
+  left: 730px;
 }
 .error-passport-cod {
   width: 166px;
   top: 672px;
   left: 944px;
 }
-
-
-/* PageTwo */
-
-.label-input-rentPrice {
-  top: 324px;
-  left: 810px;
-  width: 165px;
+.heading-photo-data {
+  width: 216px;
+  top: 707px;
+  left: 330px;
 }
-
-.input-rentPrice {
-  padding-left: 20px;
-  font-size: 18px;
-  line-height: 25px;
-  margin: 0px;
-  position: absolute;
-  width: 200px;
-  height: 58px;
-  top: 352px;
-  left: 810px;
-  border-radius: 5px;
+.label-photo-doc {
+  width: 201px;
+  height: 18px;
+  top: 716px;
+  left: 566px;
 }
-.input-rentPrice:focus {
-  outline-color: rgba(66, 133, 244, 50.09%);
+.text-save-data {
+  width: 220px;
+  height: 48px;
+  top: 750px;
+  left: 790px;
 }
-
-.error-rentPrice {
-  width: 348px;
-  height: 30px;
-  top: 415px;
-  left: 810px;
-  line-height: 15px;
-  text-align: left;
-}
-.error-rent-aligh-right {
-  left: 870px;
-  width: 166px;
-  text-align: right;
-}
-.error-address {
-  width: 166px;
-  top: 415px;
-  left: 624px;
-}
-.headings-text {
+.btn-add-files {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 0px;
   margin: 0px;
   position: absolute;
+  width: 140px;
+  height: 60px;
+  border: 1px solid #5491F5;
+  background: #fff;
+  color: #5491F5;
+  border-radius: 5px;
+}
+.btn-add-file-passport-2-3-page {
+  top: 742px;
+  left: 330px;
+}
+.btn-add-file-text-plus {
+  font-size: 30px;
+  line-height: 30px;
+}
+.btn-add-file-text {
+  font-size: 13px;
+  line-height: 16px;
+}
+.btn-add-file-passport-address {
+  top: 742px;
+  left: 480px;
+}
+.btn-add-file-passport-selfy {
+  top: 742px;
+  left: 630px;
+}
+.error-file-one {
+  top: 807px;
+  left: 330px;
+  width: 139px;
+}
+.error-file-two {
+  top: 807px;
+  left: 480px;
+  width: 139px;
+}
+.error-file-three {
+  top: 807px;
+  left: 630px;
+  width: 139px;
+}
+.btn-next {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  width:220px;
+  height: 55px;
+  background: #5491F5;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+.btn-next:disabled {
+  background: rgba(84, 145, 245, 50%);;
+}
+.btn-next:not([disabled]):hover {
+  background: #3477E4;
+}
+.btn-one-page {
+  top: 852px;
+  left: 890px;
+}
+.text-btn {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  width: 140px;
+  height: 20px;
+  top: 18px;
+  left: 40px;
   font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+.headings {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  height: 25px;
+  font-size: 25px;
   line-height: 25px;
   color: #484848;
 }
+.heading-passport-data {
+  width: 251px;
+  top: 440px;
+  left: 329px;
+}
+
+/* PageTwo */
+
 .step-heading-text-two {
   width: 219px;
   height: 25px;
@@ -393,6 +358,45 @@
   top: 352px;
   left: 330px;
 }
+.error-address {
+  width: 166px;
+  top: 415px;
+  left: 624px;
+}
+.label-input-rentPrice {
+  top: 324px;
+  left: 810px;
+  width: 165px;
+}
+.input-rentPrice {
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0px;
+  position: absolute;
+  width: 200px;
+  height: 58px;
+  top: 352px;
+  left: 810px;
+  border-radius: 5px;
+}
+.input-rentPrice:focus {
+  outline-color: rgba(66, 133, 244, 50.09%);
+}
+.error-rentPrice {
+  width: 348px;
+  height: 30px;
+  top: 415px;
+  left: 810px;
+  line-height: 15px;
+  text-align: left;
+}
+.error-rent-aligh-right {
+  left: 870px;
+  width: 166px;
+  text-align: right;
+}
+
 .label-docs {
   width: 98px;
   top: 461px;
@@ -411,6 +415,11 @@
   height: 15px;
   top: 485px;
   left: 330px;
+}
+.error-file-doc {
+  width: 140px;
+  top: 523px;
+  left: 570px;
 }
 .showInsurance {
   display: block;
@@ -448,7 +457,6 @@
 .show-none {
   display: none;
 }
-
 .text-copy-passport {
   padding: 0px;
   margin: 0px;
@@ -494,7 +502,6 @@
   color: #5491F5;
   border-radius: 5px;
 }
-
 .text-copy-passport-two {
   padding: 0px;
   margin: 0px;
@@ -508,7 +515,6 @@
   text-align: center;
   color: #5491F5;
 }
-
 .delete-two {
   padding: 0px;
   margin: 0px;
@@ -519,12 +525,10 @@
   left: 1008px;
   color: #2F8FFF;
 }
-
 .btn-two-page {
   top: 570px;
   left: 890px;
 }
-
 .btn-back {
   padding: 0px;
   margin: 0px;
@@ -539,30 +543,6 @@
   color: #4285F4;
   border: 1px solid #5491F5;
   background-color: #fff;
-  border-radius: 5px;
-}
-
-.input-error {
-  border: 1px solid rgba(255, 115, 115, 50.09%);
-  color: #484848;
-}
-
-.input-success {
-  border: 1px solid #3477E4;
-  color: #484848;
-}
-.input-state {
-  border: 1px solid #979797;
-  color: #979797;
-}
-.inputs {
-  margin: 0px;
-  position: absolute;
-  padding-left: 20px;
-  width: 360px;
-  height: 58px;
-  font-size: 18px;
-  line-height: 25px;
   border-radius: 5px;
 }
 .check-all {
@@ -596,7 +576,6 @@
   top: 627px;
   left: 678px;
 }
-
 .check-rent {
   top: 370px;
   left: 998px;
@@ -612,9 +591,6 @@
   color: #4285F4;
   text-align: center;
 }
-
-
-
 .check-none {
   display: none;
 }

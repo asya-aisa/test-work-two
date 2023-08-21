@@ -8,7 +8,7 @@ const FioInput = ({control, name, watch}) => {
     const [valueFio, setValueFio] = useState('');
 
     return (<div>
-        <label className="label-fio label-inputs">Фамилия Имя Отчество</label>
+        <label className="label-inputs label-fio">Фамилия Имя Отчество</label>
         <div className="fio-input">
             <FioSuggestions
              token="57ee03534661408f78ed9dfcc4924dc7cc403a67"
