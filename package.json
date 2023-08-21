@@ -10,6 +10,7 @@
     "react-dadata": "^2.23.1",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.4",
+    "react-input-mask": "^3.0.0-alpha.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
