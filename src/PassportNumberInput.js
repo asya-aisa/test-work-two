@@ -3,8 +3,8 @@ import { useController } from "react-hook-form";
 import InputMask from "react-input-mask";
 
 
-const PassportNumberInput = ({control, name}) => {
-    const { field } = useController({ control, name, rules: {
+const PassportNumberInput = ({control, name, watch, errors}) => {
+    const { field } = useController({ control, name, watch, errors, rules: {
         required: 'это поле нужно заполнить',
         minLength: {
             value: 11,
@@ -12,13 +12,23 @@ const PassportNumberInput = ({control, name}) => {
         }
     } });
     const [value, setValue] = useState('');
+    const passportNumberInput = watch('PassportNumber');
 
     return(
         <div>
             <label className="label-passport-number label-inputs">Серия и номер </label>
-            <label className="label-passport-number-onlyRF">только паспорт РФ</label>
+            <label className=" label-inputs-two label-passport-number-onlyRF">только паспорт РФ</label>
+
+
+
             <InputMask
-            className="passport-number-input"
+            className={passportNumberInput ? 
+                errors.PassportNumber ? 
+                'inputs passport-number-input input-error' 
+                : 'inputs passport-number-input input-success'
+                : errors.PassportNumber ? 'inputs passport-number-input input-error' 
+                : 'inputs passport-number-input input-state'}
+            
             value={value}
             onChange={(e) => {
                 setValue(e.target.value);
@@ -28,6 +38,15 @@ const PassportNumberInput = ({control, name}) => {
             placeholder="0000 - 000000"
             mask="9999 999999"
             />
+
+            <div className=
+             {passportNumberInput ? 
+             errors.PassportNumber ? 
+            'check-none' 
+            : 'check-all check-number'
+            : 'check-none'}>
+            <span className="icon-check">🗸︎</span>
+            </div>
         </div>
     )
 }

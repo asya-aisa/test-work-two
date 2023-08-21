@@ -3,7 +3,7 @@ import { useController } from "react-hook-form";
 
 
 function FileInput ({ control, name, textBtn, classNameBtnAdd }) {
-    const { field } = useController({ control, name, rules: {required: true } });
+    const { field } = useController({ control, name, rules: {required: 'добавьте файл' } });
     const [value, setValue] = useState('');
 
     const [showName, setshowName] = useState('');
@@ -36,9 +36,6 @@ function FileInput ({ control, name, textBtn, classNameBtnAdd }) {
            onClick={() => fileInput.current.click()}>
             <span className="btn-add-file-text-plus">{btnSpanText}</span>
             {btnText} 
-
-           {/* <span className="btn-add-file-text-plus">+</span>
-           <span className="btn-add-file-text">{textBtn}</span> */}
         </button>
         </div>
       );

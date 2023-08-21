@@ -2,8 +2,8 @@ import { useState  } from "react";
 import { useController } from "react-hook-form";
 import { FioSuggestions } from 'react-dadata';
 
-const FioInput = ({control, name}) => {
-    const { field } = useController({ control, name, rules: {required: 'это поле нужно заполнить', pattern: {value: /[a-za-я]/}} });
+const FioInput = ({control, name, watch}) => {
+    const { field } = useController({ control, name, watch, rules: {required: 'это поле нужно заполнить', pattern: {value: /[a-za-я]/}} });
     const [valueFio, setValueFio] = useState('');
 
     return (
@@ -14,7 +14,7 @@ const FioInput = ({control, name}) => {
              token="57ee03534661408f78ed9dfcc4924dc7cc403a67"
              value={valueFio}
              onChange={(e) => {
-              setValueFio(e)
+             setValueFio(e)
               field.onChange(e);
               }}
             />

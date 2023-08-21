@@ -9,29 +9,35 @@ function PageTwo() {
 const {
 register,
 handleSubmit,
+watch,
 formState: { errors, isValid },
 control
 }  = useForm({
 mode: 'onChange'
 });
 const [price, setPrice] = useState(null);
+
+const [showCopyPassport, setShowCopyPassport] = useState(true);
+const [showCopyPassportTwo, setShowCopyPassportTwo] = useState(true);
+
+
 const onSubmit = (data) => {
 console.log(data, 'страховка:', price)
 };
 return (
 <div>
-   <StepHeading classNameText='step-heading-text-two' text='Шаг 2 из 2 | О квартире' classNameHr='step-heading-hr-two'/>
-   <p className="heading-text-step-two">Мы составим договор аренды: в нем не будет<br />  упоминания залога, но будет пункт o страховке</p>
+   <StepHeading classNameText='headings-text step-heading-text-two' text='Шаг 2 из 2 | О квартире' classNameHr='hrs-step step-heading-hr-two'/>
+   <p className="headings-text heading-about-DA">Мы составим договор аренды: в нем не будет<br />  упоминания залога, но будет пункт o страховке</p>
    <form onSubmit={handleSubmit(onSubmit)}>
       <AddressInput name='address' control={control} />
       {errors?.address && (
-      <div className="error-fio errors">{errors.address.message}</div>
+      <div className="error-address errors">{errors.address.message}</div>
       )}
 
       <label className="label-inputs label-input-rentPrice">Стоимость аренды</label>
-      <RentInput name='rentPrice' control={control} price={price} setPrice={setPrice} />
+      <RentInput name='rentPrice' control={control} price={price} setPrice={setPrice} watch={watch} errors={errors} />
       {errors.rentPrice && errors.rentPrice.type === "required" && (
-      <div className="errors error-rentPrice">это поле нужно заполнить</div>
+      <div className="errors error-rentPrice error-rent-aligh-right">это поле нужно заполнить</div>
       )}
       {errors.rentPrice && errors.rentPrice.type === "min" && (
       <div className="errors error-rentPrice">Мы работаем с квартирами от 20 000₽/мес.
@@ -45,14 +51,23 @@ return (
       )}
 
       <label className="label-inputs label-docs">Документы</label>
-      <label className="label-docs-info">договор аренды, доп. соглашение</label>
-      <FileInput name='fileDoc' control={control} textBtn='выбрать файл' classNameBtnAdd='btn-add-file-doc'/>
-        {errors?.filePassportSelfy && (
-            <div>{errors.filePassportSelfy.message}</div>
+      <label className="label-texts label-docs-info">договор аренды, доп. соглашение</label>
+      <FileInput name='fileDoc' control={control} textBtn='выбрать файл' classNameBtnAdd='btn-add-files btn-add-file-doc'/>
+        {errors?.fileDoc && (
+            <div className="errors error-file-doc">{errors.fileDoc.message}</div>
         )}
 
+      <div className={showCopyPassport ? 'div-copy-passport' : 'show-none'}></div>
+      <p className={showCopyPassport ? 'text-copy-passport' : 'show-none'}>copy passport…</p>
+      <p className={showCopyPassport ? 'delete' : 'show-none'} onClick={() => {setShowCopyPassport(false)}}><span className="delete-icon">×</span></p>
 
-      <button disabled={!isValid}>далее</button>
+      <div className={showCopyPassportTwo ? 'div-copy-passport-two' : 'show-none'}></div>
+      <p className={showCopyPassportTwo ? 'text-copy-passport-two' : 'show-none'}>copy passport…</p>
+      <p className={showCopyPassportTwo ? 'delete-two' : 'show-none'} onClick={() => {setShowCopyPassportTwo(false)}}><span className='delee-icon'>×</span></p>
+
+
+      <button className="btn-next btn-two-page" disabled={!isValid}><span className="text-btn">Далее</span></button>
+      <button className="btn-back"><span className="text-btn">Назад</span></button>
    </form>
 </div>
 )

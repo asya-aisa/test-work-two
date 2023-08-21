@@ -1,8 +1,8 @@
 import { useState  } from "react";
 import { useController } from "react-hook-form";
 
-const RentInput = ({ control, name, price, setPrice }) => {
-    const { field } = useController({ control, name, rules: {required: true,
+const RentInput = ({ control, name, price, setPrice, watch, errors }) => {
+    const { field } = useController({ control, name, watch, errors, rules: {required: true,
     min: {
         value: 20000
     },
@@ -12,6 +12,8 @@ const RentInput = ({ control, name, price, setPrice }) => {
 });
     const [value, setValue] = useState("");
     const [showInsurance, setShowInsurance] = useState(false);
+
+    const rentPriceInput = watch('rentPrice');
 
 
     const getInsurance = (e) => {
@@ -38,16 +40,34 @@ const RentInput = ({ control, name, price, setPrice }) => {
 
     return (<div>
       <input
-      className="input-rentPrice"
+      className=
+      {rentPriceInput ? 
+        errors.rentPrice ? 
+        'input-rentPrice input-error' 
+        : 'input-rentPrice input-success'
+        : errors.rentPrice ? 'input-rentPrice input-error' 
+        : 'input-rentPrice input-state'}
+    //   "input-rentPrice"
+
         value={value}
         onChange={(e) => {
 getInsurance(e)
         }}
       />
 
-      <p className={!showInsurance ? 'none' : 'show'}>Стоимость<br />страховки<br />
+      <p className={!showInsurance ? 'noneInsurance' : 'showInsurance'}>Стоимость<br />страховки<br />
       <span style={{fontWeight: 'bold'}}>{price}₽/мес</span>
       <br />(платит арендатор)</p>
+
+
+      <div className=
+           {rentPriceInput ? 
+           errors.rentPrice ? 
+           'check-none' 
+           : 'check-all check-rent'
+           : 'check-none'}>
+            <span className="icon-check">🗸︎</span>
+      </div>
       </div>
     );
   };
