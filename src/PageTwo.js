@@ -1,4 +1,10 @@
 import { useState } from "react";
+import {
+   BrowserRouter as Router,
+   Routes,
+   Route,
+   Link
+ } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import StepHeading from "./StepHeading";
 import AddressInput from "./AddressInput";
@@ -58,7 +64,12 @@ function PageTwo() {
          <p className={showCopyPassportTwo ? 'delete-two' : 'show-none'} onClick={() => {setShowCopyPassportTwo(false)}}><span className='delee-icon'>×</span></p>
          
          <button className="btn-next btn-two-page" disabled={!isValid}><span className="text-btn">Далее</span></button>
-         <button className="btn-back"><span className="text-btn">Назад</span></button>
+
+
+         <button className="btn-back">
+         <Link to='/' className="text-btn link">Назад</Link>
+            
+            </button>
       </form>
    </div>)
 }

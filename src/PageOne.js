@@ -1,3 +1,9 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 import { useForm } from "react-hook-form";
 import 'react-dadata/dist/react-dadata.css';
 import React from "react";
@@ -7,6 +13,7 @@ import FileInput from "./FileInput";
 import FioInput from "./FioInput";
 import PassportNumberInput from "./PassportNumberInput";
 import PassportCodInput from "./PassportCodInput";
+import PageTwo from "./PageTwo";
 
 
 const PageOne = () => {
@@ -187,7 +194,13 @@ const PageOne = () => {
                     <span className="icon-check">🗸︎</span>
             </div>
             
-            <button disabled={!isValid} className="btn-next btn-one-page"><span className="text-btn">Далее</span></button>
+                         
+            <button
+            onClick={handleSubmit(onSubmit)}
+            disabled={!isValid}
+            className="btn-next btn-one-page">
+                <Link to='/stepTwo' className={isValid ? 'link-auto' : 'link-none'}>Далее</Link>
+            </button>
         </form>
     </div>)
 }
