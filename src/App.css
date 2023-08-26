@@ -12,40 +12,6 @@
 .App {
   font-family: 'graphik_lcgregular';
 }
-.link-auto {
-  pointer-events: auto;
-  text-decoration: none;
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  width: 140px;
-  height: 20px;
-  top: 18px;
-  left: 40px;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  color: #fff;
-}
-.link-none {
-  pointer-events: none;
-  text-decoration: none;
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  width: 140px;
-  height: 20px;
-  top: 18px;
-  left: 40px;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  color: #fff;
-}
-.link {
-  text-decoration: none;
-  color: #4285F4;
-}
 .headings-text {
   padding: 0px;
   margin: 0px;

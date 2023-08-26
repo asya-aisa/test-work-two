@@ -1,9 +1,3 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
 import { useForm } from "react-hook-form";
 import 'react-dadata/dist/react-dadata.css';
 import React from "react";
@@ -13,10 +7,12 @@ import FileInput from "./FileInput";
 import FioInput from "./FioInput";
 import PassportNumberInput from "./PassportNumberInput";
 import PassportCodInput from "./PassportCodInput";
-import PageTwo from "./PageTwo";
+import { useNavigate } from "react-router-dom";
 
 
 const PageOne = () => {
+    let navigate = useNavigate();
+
     const {
         register,
         handleSubmit,
@@ -27,14 +23,17 @@ const PageOne = () => {
         mode:'onChange'
     });
     
-    const onSubmit = (data) => console.log(data)
+    const onSubmit = (data) => {
+        console.log(data);
+        navigate('/stepTwo')
+
+    }
 
     const emailInput = watch('email');
     const birthdayInput = watch('birthday');
     const whoPassportInput = watch('whoPassport');
     const whenPassportInput = watch('whenPassport');
 
- 
 
     return(<div>
         <StepHeading text='Шаг 1 из 2 | Личная информация' classNameText='headings-text step-heading-text' classNameHr='hrs-step step-heading-hr' />
@@ -194,12 +193,10 @@ const PageOne = () => {
                     <span className="icon-check">🗸︎</span>
             </div>
             
-                         
             <button
-            onClick={handleSubmit(onSubmit)}
             disabled={!isValid}
             className="btn-next btn-one-page">
-                <Link to='/stepTwo' className={isValid ? 'link-auto' : 'link-none'}>Далее</Link>
+                <span className="text-btn">Далее</span>
             </button>
         </form>
     </div>)
