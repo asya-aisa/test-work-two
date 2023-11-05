@@ -2,7 +2,7 @@ import cn from 'clsx'
 import { useState } from 'react'
 import { useController } from 'react-hook-form'
 import IconCheck from '../../iconCheck/IconCheck'
-import { getInsurance } from './CalculationInsurance'
+import { getInsurance } from './calculationInsurance'
 import styles from './FieldRent.module.scss'
 
 const FieldRent = ({ control, name, price, setPrice, watch, error }) => {
