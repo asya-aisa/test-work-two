@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'graphik_lcgregular';
+	src: url('fonts/graphiklcg-regular-webfont.eot');
+	src: url('fonts/graphiklcg-regular-webfont.eot?#iefix')
+			format('embedded-opentype'),
+		url('fonts/graphiklcg-regular-webfont.woff2') format('woff2'),
+		url('fonts/graphiklcg-regular-webfont.woff') format('woff'),
+		url('fonts/graphiklcg-regular-webfont.svg#graphik_lcgregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	font-family: 'graphik_lcgregular';
+}

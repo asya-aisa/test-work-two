@@ -2,17 +2,16 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
-import './App.css';
-import PageOne from './PageOne';
-import PageTwo from './PageTwo';
+import './assets/styles/index.scss'
+import PageOne from './components/screens/pageOne/PageOne'
+import PageTwo from './components/screens/pageTwo/PageTwo'
 
 function App() {
   return (<Router>
     <Routes>
-      <Route path='/' element={<PageOne />}/>
+      <Route path='/' element={<PageOne/>}/>
       <Route path='/stepTwo' element={<PageTwo/>}/>
     </Routes>
   </Router>);

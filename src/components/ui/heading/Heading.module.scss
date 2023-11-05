@@ -1,0 +1,61 @@
+.heading {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	height: 25px;
+	font-size: 25px;
+	line-height: 25px;
+	color: #484848;
+
+	&.coordHeadingDataPassport {
+		width: 251px;
+		top: 440px;
+		left: 329px;
+	}
+
+	&.coordHeadingPhotoDoc {
+		width: 216px;
+		top: 707px;
+		left: 330px;
+	}
+}
+.headingStep {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	height: 25px;
+	top: 152px;
+	font-size: 18px;
+	line-height: 25px;
+	color: #484848;
+
+	&.coordTextStepOne {
+		width: 290px;
+		left: 330px;
+	}
+
+	&.coordTextStepTwo {
+		width: 219px;
+		left: 331px;
+	}
+}
+.hr {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 175px;
+	border: none;
+	border-bottom: #4285f4 5px solid;
+
+	&.coordHrStepOne {
+		width: 275px;
+		height: 3px;
+		left: 332px;
+	}
+
+	&.coordHrStepTwo {
+		width: 200px;
+		height: 2px;
+		left: 334px;
+	}
+}

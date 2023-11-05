@@ -1,0 +1,30 @@
+@import 'src/assets/styles/variables';
+
+.errors {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 415px;
+	height: 13px;
+	line-height: 13px;
+	font-size: 13px;
+	color: $red;
+}
+
+.required {
+	left: 870px;
+	width: 166px;
+	text-align: right;
+}
+
+.minMax {
+	width: 348px;
+	height: 30px;
+	left: 810px;
+	line-height: 15px;
+}
+
+.span {
+	display: inline-block;
+	width: 349px;
+}

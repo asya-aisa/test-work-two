@@ -1,0 +1,57 @@
+.btn {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 220px;
+	height: 55px;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	border-radius: 5px;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&.next {
+		background: #5491f5;
+		border: none;
+		color: #fff;
+
+		&:disabled {
+			background: rgba(84, 145, 245, 50%);
+		}
+
+		&:not([disabled]):hover {
+			background: #3477e4;
+		}
+	}
+
+	&.back {
+		top: 570px;
+		left: 650px;
+		color: #4285f4;
+		border: 1px solid #5491f5;
+		background-color: #fff;
+	}
+
+	&.nextOne {
+		top: 852px;
+		left: 890px;
+	}
+
+	&.nextTwo {
+		top: 570px;
+		left: 890px;
+	}
+}
+
+.textBtn {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 140px;
+	height: 20px;
+	top: 18px;
+	left: 40px;
+}

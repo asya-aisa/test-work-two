@@ -1,0 +1,59 @@
+.check {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+  width: 22px;
+  height: 22px;
+	display: none;
+
+	&.show {
+		display: block;
+	}
+
+	&.birthday {
+		top: 249px;
+		left: 1077px;
+	}
+
+	&.email {
+		top: 360px;
+		left: 678px;
+	}
+
+	&.whoPassport {
+		top: 516px;
+		left: 1078px;
+	}
+
+	&.whenPassport {
+		top: 627px;
+		left: 678px;
+	}
+
+	&.PassportNumber {
+		top: 516px;
+		left: 678px;
+	}
+
+	&.PassportCod {
+		top: 627px;
+		left: 1078px;
+	}
+
+	&.rentPrice {
+		top: 370px;
+		left: 998px;
+	}
+}
+
+.iconCheck {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+  width: 14px;
+  height: 10px;
+  top: 6px;
+  left: 4px;
+  color: #4285F4;
+  text-align: center;
+}

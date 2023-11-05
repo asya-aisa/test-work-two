@@ -1,0 +1,74 @@
+@import 'src/assets/styles/variables';
+
+.input {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+	width: 360px;
+	height: 58px;
+	font-size: 18px;
+	color: #484848;
+	line-height: 25px;
+	border-radius: 5px;
+	border: 1px solid #979797;
+
+	&::-webkit-calendar-picker-indicator {
+		opacity: 0;
+	}
+
+	&::placeholder {
+		position: absolute;
+		font-size: 18px;
+		line-height: 25px;
+		opacity: 50%;
+	}
+
+	&:focus {
+		outline-color: rgba(66, 133, 244, 50.09%);
+	}
+
+	&.colorInput {
+		color: #979797;
+	}
+
+	&.errorInput {
+		border: 1px solid rgba(255, 115, 115, 50.09%);
+		color: #484848;
+	}
+
+	&.successInput {
+		border: 1px solid #3477e4;
+		color: #484848;
+	}
+
+	&.birthday {
+		top: 231px;
+		left: 729px;
+	}
+
+	&.email {
+		top: 342px;
+		left: 330px;
+	}
+
+	&.PassportNumber {
+		top: 498px;
+		left: 330px;
+	}
+
+	&.whoPassport {
+		top: 498px;
+		left: 730px;
+	}
+
+	&.whenPassport {
+		top: 609px;
+		left: 330px;
+	}
+
+	&.PassportCod {
+		top: 609px;
+		left: 730px;
+	}
+}

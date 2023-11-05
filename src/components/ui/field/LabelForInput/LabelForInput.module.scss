@@ -1,0 +1,96 @@
+.nameForInput {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	height: 18px;
+	font-size: 18px;
+	line-height: 18px;
+	color: #484848;
+
+	&.fioLabel {
+		top: 208px;
+		left: 329px;
+	}
+
+	&.birthdayLabel {
+		width: 132px;
+		top: 208px;
+		left: 729px;
+	}
+
+	&.emailLabel {
+		top: 319px;
+		left: 330px;
+		width: 52px;
+	}
+	&.whoPassportLabel {
+		width: 92px;
+		top: 475px;
+		left: 730px;
+	}
+
+	&.whenPassportLabel {
+		width: 107px;
+		top: 586px;
+		left: 330px;
+	}
+
+	&.PassportCodLabel {
+		width: 170px;
+		top: 586px;
+		left: 730px;
+	}
+
+	&.PassportNumberLabel {
+		width: 131px;
+		top: 475px;
+		left: 330px;
+	}
+
+	&.addressLabel {
+		top: 329px;
+		left: 330px;
+	}
+
+	&.priceRent {
+		top: 324px;
+		left: 810px;
+		width: 165px;
+	}
+	&.labelDocs {
+		width: 98px;
+		top: 461px;
+		left: 330px;
+	}
+}
+
+.nameForInputTwo {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	line-height: 13px;
+	color: #979797;
+	text-align: right;
+
+	&.PassportNumberInfoLabel {
+		width: 300px;
+		height: 13px;
+		top: 480px;
+		left: 410px;
+	}
+
+	&.emailInfoLabel {
+		width: 300px;
+		height: 18px;
+		top: 321px;
+		left: 410px;
+	}
+
+	&.photoInfoLabel {
+		width: 201px;
+		height: 18px;
+		top: 716px;
+		left: 566px;
+	}
+}

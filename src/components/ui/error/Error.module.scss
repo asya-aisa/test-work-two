@@ -1,0 +1,83 @@
+@import 'src/assets/styles/variables';
+.error {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	height: 13px;
+	line-height: 13px;
+	font-size: 13px;
+	color: $red;
+	text-align: right;
+
+	&.fio {
+		width: 166px;
+		top: 294px;
+		left: 543px;
+	}
+
+	&.birthday {
+		width: 324px;
+		top: 294px;
+		left: 780px;
+	}
+
+	&.email {
+		width: 166px;
+		top: 405px;
+		left: 544px;
+	}
+
+	&.PassportNumber {
+		width: 178px;
+		top: 561px;
+		left: 532px;
+	}
+
+	&.whoPassport {
+		width: 166px;
+		top: 561px;
+		left: 944px;
+	}
+
+	&.whenPassport {
+		width: 178px;
+		top: 672px;
+		left: 532px;
+	}
+
+	&.PassportCod {
+		width: 178px;
+		top: 672px;
+		left: 932px;
+	}
+
+	&.filePassportMain {
+		top: 807px;
+		left: 330px;
+		width: 139px;
+	}
+
+	&.filePassportAddress {
+		top: 807px;
+		left: 480px;
+		width: 139px;
+	}
+
+	&.filePassportSelfy {
+		top: 807px;
+		left: 630px;
+		width: 139px;
+	}
+
+	&.fileForSelect {
+		width: 140px;
+		top: 523px;
+		left: 570px;
+	}
+
+	&.address {
+		width: 166px;
+		top: 415px;
+		left: 624px;
+	}
+}
